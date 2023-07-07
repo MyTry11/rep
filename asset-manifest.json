@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rep/static/css/main.096c7551.css",
+    "main.js": "/rep/static/js/main.edf8c57f.js",
+    "static/js/787.28cb0dcd.chunk.js": "/rep/static/js/787.28cb0dcd.chunk.js",
+    "static/media/woman_with_phone.jpg": "/rep/static/media/woman_with_phone.8801cdbdc7a78ff00e58.jpg",
+    "index.html": "/rep/index.html",
+    "main.096c7551.css.map": "/rep/static/css/main.096c7551.css.map",
+    "main.edf8c57f.js.map": "/rep/static/js/main.edf8c57f.js.map",
+    "787.28cb0dcd.chunk.js.map": "/rep/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.096c7551.css",
+    "static/js/main.edf8c57f.js"
+  ]
+}
