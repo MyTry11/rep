@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Main } from "./components/Main";
+import { Quiz } from "./components/Quiz";
+import { QuizForm } from "./components/QuizForm";
+import { Process } from "./components/Process";
+import { Guarantees } from "./components/Guarantees";
+import { Comparing } from "./components/Comparing";
+import { Cases } from "./components/Cases";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main></Main>
+      <Quiz>
+        <QuizForm></QuizForm>
+      </Quiz>
+      <Process></Process>
+      <Guarantees></Guarantees>
+      <Comparing></Comparing>
+      <Cases></Cases>
     </div>
   );
 }
