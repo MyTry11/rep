@@ -2,7 +2,7 @@ import React from "react";
 
 export function Cases() {
   return (
-    <section className=" py-12 ">
+    <section className=" py-12 " id="cases">
       <div className="container">
         <div className="section_content">
           <h2 className="mb-5 text-4xl">We are good at removing news cases</h2>

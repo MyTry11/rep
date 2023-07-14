@@ -5,7 +5,7 @@ interface Props {
 
 export const Quiz: React.FC<Props> = ({ children }) => {
   return (
-    <section className=" py-12 ">
+    <section className=" py-12 " id="cost">
       <div className="container">
         <div className="section_content quiz_section_content">
           <h2 className="text-4xl	mb-4">

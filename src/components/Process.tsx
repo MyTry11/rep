@@ -2,7 +2,7 @@ import React from "react";
 
 export function Process() {
   return (
-    <section className=" py-12 ">
+    <section className=" py-12 " id="how">
       <div className="container">
         <div className="section_content">
           <h2 className="text-4xl	mb-4">How you remove content?</h2>

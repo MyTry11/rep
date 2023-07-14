@@ -2,7 +2,7 @@ import React from "react";
 
 export function Guarantees() {
   return (
-    <section className=" py-12 ">
+    <section className=" py-12 " id="guarantees">
       <div className="container">
         <div className="section_content">
           <h2 className="text-4xl mb-5">It is safe</h2>

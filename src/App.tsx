@@ -19,6 +19,12 @@ function App() {
       <Guarantees></Guarantees>
       <Comparing></Comparing>
       <Cases></Cases>
+      <div className="h-[3000px] scroll-smooth">
+        <a href="#aa">link</a>
+        sad
+        <div id="asd">sdssdgsd</div>
+        <div id="aa">aaa</div>
+      </div>
     </div>
   );
 }
