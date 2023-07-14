@@ -42,14 +42,14 @@ html {
 }
 .main {
   background-size: cover;
-  height: 1000px;
+  height: 800px;
   color: white;
   background:
         /* top, transparent black, faked with gradient */ linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    /* bottom, image */ url("./images/woman_with_phone.jpg") center no-repeat;
+    /* bottom, image */ url("./images/man_bg.jpg") center no-repeat;
 }
 
 header {
@@ -85,13 +85,46 @@ header {
 }
 
 .section_content {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .quiz_section_content {
   color: black;
 }
+h2 {
+  font-weight: bold;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 43px 101px rgba(245, 219, 117, 0.2),
+    inset 0 0 10px rgba(206, 229, 251, 0.15);
+  background-color: #393939;
+  background-image: linear-gradient(-216deg, #fff0bf 0, #fcdc6e 100%);
+  border-radius: 50%;
+  margin-right: 1.302vw;
+}
+.circle > img,
+.remove-bg {
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+}
 
+.circle-w-space::before {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+  margin-top: 8px;
+  content: "";
+  border: 3px solid #fcdc6e;
+  border-radius: 50%;
+  /* margin-right: 0.46875vw; */
+  /* margin-top: 0.3vw; */
+}
 .nav {
   padding: 20px;
   width: 100%;

@@ -17,7 +17,8 @@ export const LastStepQuiz: React.FC<StepsInt> = ({
               type="radio"
               name="social"
               id="Whatsapp"
-              value={currentMessenger === "Whatsapp"}
+              value={"Whatsapp"}
+              checked={currentMessenger === "Whatsapp"}
               onChange={messengerChange}
               className="box-border	hidden"
             />
@@ -30,7 +31,8 @@ export const LastStepQuiz: React.FC<StepsInt> = ({
               type="radio"
               name="social"
               id="Telegram"
-              value={currentMessenger === "Telegram"}
+              value={"Telegram"}
+              checked={currentMessenger === "Telegram"}
               onChange={messengerChange}
               className="box-border	"
             />
@@ -42,7 +44,8 @@ export const LastStepQuiz: React.FC<StepsInt> = ({
               type="radio"
               name="social"
               id="Viber"
-              value={currentMessenger === "Viber"}
+              value={"Viber"}
+              checked={currentMessenger === "Viber"}
               onChange={messengerChange}
               className="box-border	"
             />
@@ -54,7 +57,8 @@ export const LastStepQuiz: React.FC<StepsInt> = ({
               type="radio"
               name="social"
               id="phone"
-              value={currentMessenger === "Call me"}
+              value={"Call me"}
+              checked={currentMessenger === "Call me"}
               onChange={messengerChange}
               className="box-border	"
             />

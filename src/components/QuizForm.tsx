@@ -26,9 +26,11 @@ export interface StepsInt {
   stepThreeValue?: { [key: string]: string };
   handleSubmit?(value: MouseEvent): void;
   currentMessenger?: string;
-  messengerChange?(): void;
+  messengerChange?(value: React.FormEvent<HTMLInputElement>): void;
+  // setStepThreeValue?(value: any): void;
+  handleStepThree?(value: { [key: string]: string }): void;
 }
-
+// {} | { [key: string]: string }
 export function QuizForm() {
   const checkeds = {
     news: false,
@@ -39,20 +41,12 @@ export function QuizForm() {
     mugshots: false,
   };
   const [currentStep, setCurrentStep] = useState(0);
-  // console.log(steps.length);
 
   const [checked, setChecked] = useState<CheckedInt>(checkeds);
   const [currentRadio, setCurrentRadio] = useState<string>("this-year");
-  const [stepThreeValue, setStepThreeValue] = useState<
-    {} | { [key: string]: string }
-  >({});
+  const [stepThreeValue, setStepThreeValue] = useState<any>({});
   const [currentMessenger, setCurrentMessenger] = useState<string>("Whatsapp");
-  // const handleSubmit = (e: any) => {
-  //   e.preventDefault();
-  //   console.log(checked, currentRadio, stepThreeValue);
-  // };
   const nextStep = (): void => {
-    // e.preventDefault();
     setCurrentStep(currentStep + 1);
   };
   const prevStep = (): void => {
@@ -63,13 +57,16 @@ export function QuizForm() {
     setChecked({ ...checked, [value.target.name]: value.target.checked });
   };
   const radioChange = (e: any): void => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     setCurrentRadio(e.target.value);
+  };
+  const handleStepThree = (obj: { [key: string]: string }) => {
+    setStepThreeValue(obj);
   };
 
   const messengerChange = (e: any) => {
     setCurrentMessenger(e.target.id);
-    console.log(currentMessenger);
+    // console.log(currentMessenger);
   };
 
   useEffect(() => {
@@ -80,15 +77,16 @@ export function QuizForm() {
         return el;
       });
 
-    console.log(asd);
+    // console.log(asd);
     let obj = {};
 
     asd.forEach((v) => {
       let key = v[0];
       let value = v[1];
+      // @ts-ignore
       obj[key] = value;
     });
-    console.log(obj);
+    // console.log(obj);
 
     setStepThreeValue(obj);
   }, [checked]);
@@ -106,7 +104,8 @@ export function QuizForm() {
       nextStep={nextStep}
       checked={checked}
       stepThreeValue={stepThreeValue}
-      setStepThreeValue={setStepThreeValue}
+      handleStepThree={handleStepThree}
+      // setStepThreeValue={setStepThreeValue}
     />,
     <LastStepQuiz
       messengerChange={messengerChange}

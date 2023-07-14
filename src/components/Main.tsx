@@ -82,24 +82,28 @@ export function Main() {
       <section>
         <div className="container pb-8">
           <div className="section_content main-section	">
-            <h1 className="text-base text-yellow-300 text-[1.1rem] mb-4 mb-4">
+            <h1 className="text-base text-yellow-300 text-[1.1rem] mb-4 mb-4 hidden">
               What do your customers think of you when they Google your name?
             </h1>
-            <h2 className="text-2xl">
-              Remove negative search results <b>permanently</b>
+            <h2 className="text-2xl text-center">
+              Remove negative <br /> search results <br /> <b>permanently</b>
             </h2>
-            <p className="text-2xl">in 30 days</p>
-            <div className="text-base">
+            <p className="text-2xl text-center mb-20 ">
+              <span className="border-b-4 border-amber-300">in 30 days</span>
+            </p>
+            <div className="text-base text-center mb-7">
               <div>
-                <p>5 years guarantee</p>
-                <p>Payment after removal</p>
+                <p className="mb-3">5 years guarantee</p>
+                <p className="mb-3">Payment after removal</p>
               </div>
               <div>
-                <p>2-3 times cheaper than SEO</p>
-                <p>90% of people Google company reviews before purchase</p>
+                <p className="mb-3">2-3 times cheaper than SEO</p>
+                <p>
+                  90% of people Google company <br /> reviews before purchase
+                </p>
               </div>
             </div>
-            <div className="count-price w-[100%] pointer">
+            <div className="count-price w-[100%] pointer text-center">
               <a href="#cost">Calculate the cost</a>
             </div>
             {/* <button className=" count-price w-[100%] " onClick={}>

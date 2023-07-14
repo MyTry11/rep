@@ -8,7 +8,7 @@ export const Quiz: React.FC<Props> = ({ children }) => {
     <section className=" py-12 " id="cost">
       <div className="container">
         <div className="section_content quiz_section_content">
-          <h2 className="text-4xl	mb-4">
+          <h2 className="text-4xl	mb-4 font-medium">
             Find out the cost of <br /> negative content removal answering
             <br />
             questions in 2 minutes
