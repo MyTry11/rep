@@ -6,24 +6,25 @@ export const StepThreeQuiz: React.FC<StepsInt> = ({
   nextStep,
   checked,
   stepThreeValue,
-  // setStepThreeValue,
   handleSubmit,
   handleStepThree,
 }) => {
   return (
-    <div>
-      <h3>How many links do you want to remove?</h3>
+    <div className="flex flex-col items-center">
+      <h2 className="mb-4 text-[1.5rem] font-[700] text-center">
+        How many links do you want to remove?
+      </h2>
       {checked &&
-        Object.entries(checked).map((el) =>
+        Object.entries(checked).map((el, i) =>
           Boolean(el[1]) ? (
-            <div>
-              <p>{el[0]} links</p>
+            <div className="w-full">
               <input
-                name={el[0]}
+                className="w-full border-b-2 mb-4 h-10 box-border"
+                placeholder={`How many ${el[0]} links`}
+                name={`${el[0]}`}
+                id={"3input" + i}
                 type="text"
                 value={stepThreeValue && stepThreeValue[el[0]]}
-                // onChange={(e) => console.log(e.target.name)}
-                // setStepThreeValue({...stepThreeValue, ...e.target.name})
                 onChange={(e) => {
                   const { name, value } = e.currentTarget;
                   const curObj = {
@@ -31,6 +32,8 @@ export const StepThreeQuiz: React.FC<StepsInt> = ({
                     ...{ [name]: value },
                   } as { [key: string]: string };
                   if (typeof curObj !== "undefined") {
+                    console.log(name);
+                    console.log(value);
                     // @ts-ignore
                     handleStepThree(curObj);
                   }
@@ -40,12 +43,22 @@ export const StepThreeQuiz: React.FC<StepsInt> = ({
           ) : null
         )}
 
-      <button onClick={prevStep} type="button">
-        Previous Step
-      </button>
-      <button onClick={nextStep} type="button">
-        next
-      </button>
+      <div className="flex step-two-btns-cont w-full">
+        <button
+          onClick={prevStep}
+          type="button"
+          className="some_btn count-price grey-btn"
+        >
+          Previous Step
+        </button>
+        <button
+          onClick={nextStep}
+          type="button"
+          className="some_btn count-price"
+        >
+          Next step
+        </button>
+      </div>
     </div>
   );
 };

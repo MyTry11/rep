@@ -7,6 +7,11 @@ import { Process } from "./components/Process";
 import { Guarantees } from "./components/Guarantees";
 import { Comparing } from "./components/Comparing";
 import { Cases } from "./components/Cases";
+import { FormBottom } from "./components/FormBottom";
+import Footer from "./components/Footer";
+import { ModalCallMe } from "./components/ModalCallMe";
+import { ModalsContainer } from "./components/ModalsContainer";
+import { RealFooter } from "./components/RealFooter";
 
 function App() {
   return (
@@ -19,6 +24,10 @@ function App() {
       <Guarantees></Guarantees>
       <Comparing></Comparing>
       <Cases></Cases>
+
+      <Footer></Footer>
+      <ModalsContainer></ModalsContainer>
+      <RealFooter></RealFooter>
     </div>
   );
 }
