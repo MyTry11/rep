@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/rep/static/css/main.c5fdc72e.css",
-    "main.js": "/rep/static/js/main.df2b6710.js",
+    "main.css": "/rep/static/css/main.25f393d2.css",
+    "main.js": "/rep/static/js/main.b790fc86.js",
     "static/js/787.28cb0dcd.chunk.js": "/rep/static/js/787.28cb0dcd.chunk.js",
+    "static/media/bc-imgs.png": "/rep/static/media/bc-imgs.8a830452658364d98593.png",
     "static/media/quiz-right-bg.png": "/rep/static/media/quiz-right-bg.1ee402b3a334277fa71f.png",
-    "static/media/worldwide.jpg": "/rep/static/media/worldwide.3666cdf5ba62c2cffb09.jpg",
-    "static/media/man_bg.jpg": "/rep/static/media/man_bg.893905d542284086fd2d.jpg",
-    "static/media/checkmark.png": "/rep/static/media/checkmark.0300335bfc35b28036fb.png",
+    "static/media/Avenir Next LT Pro Regular.otf": "/rep/static/media/Avenir Next LT Pro Regular.94f2f163d4b698242fef.otf",
+    "static/media/check-mark-green.svg": "/rep/static/media/check-mark-green.35b4df4201a88c1c0591dd62322b130a.svg",
     "index.html": "/rep/index.html",
-    "main.c5fdc72e.css.map": "/rep/static/css/main.c5fdc72e.css.map",
-    "main.df2b6710.js.map": "/rep/static/js/main.df2b6710.js.map",
+    "main.25f393d2.css.map": "/rep/static/css/main.25f393d2.css.map",
+    "main.b790fc86.js.map": "/rep/static/js/main.b790fc86.js.map",
     "787.28cb0dcd.chunk.js.map": "/rep/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5fdc72e.css",
-    "static/js/main.df2b6710.js"
+    "static/css/main.25f393d2.css",
+    "static/js/main.b790fc86.js"
   ]
 }
