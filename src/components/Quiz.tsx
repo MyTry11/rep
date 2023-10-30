@@ -48,7 +48,7 @@ export const Quiz: React.FC<Props> = ({ children }) => {
                 </p>
                 <p className="mb-20">
                   <span className="font-[700]">
-                    Arslan, the CEO of Reputation Coalition,
+                    Dylan, the CEO of Reputation Coalition,
                   </span>{" "}
                   personally oversees each project
                 </p>

@@ -355,7 +355,7 @@ body {
   left: 50%;
   transition: all 0.8s ease;
   transform-style: preserve-3d;
-  z-index: 77;
+  z-index: 20;
   top: 5vw;
   width: 320px;
   transform: translateX(-50%);
@@ -531,6 +531,15 @@ body.modal-active {
 }
 .footer {
   background-color: #fcdc6e;
+}
+.checkmark-test {
+  background-image: url("./images/check-mark-green.svg");
+  background-size: 80px 80px;
+
+  width: 80px;
+  height: 80px;
+  align-self: center;
+  margin-bottom: 32px;
 }
 @media (min-width: 900px) {
   .main {
@@ -769,11 +778,22 @@ body.modal-active {
     width: 370px;
     margin: 0 auto;
   }
-  .count-price {
+  /* .count-price {
     width: 100%;
+  } */
+  .btn-width-fix {
+    width: 45%;
+  }
+  .submit-form-btn {
+    width: 100%;
+    height: 72px;
   }
 }
 
+.header-h2 {
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera, and Firefox */
+  cursor: pointer;
+}
 .text-z {
   position: relative;
   z-index: 2;
@@ -782,9 +802,7 @@ body.modal-active {
 @media (max-width: 900px) {
   .main {
     color: white;
-    /* background-image: url("./images/bc-imgs.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%; */
+
     position: relative;
     width: 100vw;
     height: 100vh;

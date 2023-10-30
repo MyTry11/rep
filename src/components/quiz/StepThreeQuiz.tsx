@@ -19,6 +19,7 @@ export const StepThreeQuiz: React.FC<StepsInt> = ({
           Boolean(el[1]) ? (
             <div className="w-full">
               <input
+                required
                 className="w-full border-b-2 mb-4 h-10 box-border"
                 placeholder={`How many ${el[0]} links`}
                 name={`${el[0]}`}

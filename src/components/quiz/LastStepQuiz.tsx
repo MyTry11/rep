@@ -63,8 +63,8 @@ export const LastStepQuiz: React.FC<StepsInt> = ({
       <h2 className="text-[1.5rem] font-[700] text-center mb-6">
         Thank you for the answers
       </h2>
-      <h2 className="mb-6 font-[500]">Starting to count</h2>
-      <h2 className="mb-6 font-[500]">
+      <h2 className="mb-6 font-[500]">We are starting to count!</h2>
+      <h2 className="mb-6 font-[700]">
         Choose the best way to send the results
       </h2>
       <div className="hidden">

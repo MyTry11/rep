@@ -7,7 +7,6 @@ export const StepOneQuiz: React.FC<StepsInt> = ({
 }) => {
   const [somethingChecked, setSomethingChecked] = useState<boolean>(false);
   const handleNextStepOne = (e: React.MouseEvent<HTMLElement>) => {
-    console.log(checked);
     // @ts-ignore
     for (const [key, value] of Object.entries(checked)) {
       if (value === true) {
@@ -15,8 +14,10 @@ export const StepOneQuiz: React.FC<StepsInt> = ({
         nextStep();
         setSomethingChecked(true);
       }
+      console.log("shesh");
       setSomethingChecked(false);
     }
+    console.log("handleNextStepOne");
   };
   useEffect(() => {
     // @ts-ignore

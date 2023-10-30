@@ -164,31 +164,35 @@ export function QuizForm() {
   }, [currentStep]);
   const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(checked);
-    console.log(currentRadio);
-    console.log(stepThreeValue);
-    console.log(currentMessenger);
-    // if (form.current) {
-    //   emailjs
-    //     .sendForm(
-    //       "service_i0ermid",
-    //       "template_jszqftb",
-    //       form.current,
-    //       "0TgiLzRI1VTKEX6O7",
-    //       // @ts-ignore
-    //       { customValue1: "abc", customValue2: "ab2" }
-    //     )
-    //     .then(
-    //       (result) => {
-    //         console.log(result.text);
-    //         console.log("message sent");
-    //       },
-    //       (error) => {
-    //         console.log(error.text);
-    //       }
-    //     );
-    // }
-    setFormFiled(true);
+    // console.log(checked);
+    // console.log(currentRadio);
+    // console.log(stepThreeValue);
+    // console.log(currentMessenger);
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_i0ermid",
+          "template_jszqftb",
+          form.current,
+          "0TgiLzRI1VTKEX6O7",
+          // @ts-ignore
+          { customValue1: "abc", customValue2: "ab2" }
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("message sent");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+    if (currentStep != 0) {
+      console.log(currentStep);
+      setFormFiled(true);
+      console.log("form submitted");
+    }
   };
 
   const steps = [
@@ -234,11 +238,12 @@ export function QuizForm() {
         <div className="bg-last">
           {formFiled ? (
             <div className="flex flex-col text-[18px] h-[495px] thanks-subm text-center pt-20">
-              <img
+              {/* <img
                 src={checkmarkgreen}
                 alt=""
                 className="w-[80px] h-[80px] self-center mb-8"
-              />
+              /> */}
+              <div className="checkmark-test  "></div>
               <h3 className="mb-4">Thank you!</h3>
               <p className="mb-4">Your submission has been sent!</p>
             </div>

@@ -32,7 +32,7 @@ export function Guarantees() {
           </div>
 
           <button
-            className=" count-price w-[100%] text-z "
+            className=" count-price w-[100%] text-z btn-width-fix"
             onClick={(e) => {
               dispatch(setModalLinksActive(true));
               document.body.classList.add("modal-active");

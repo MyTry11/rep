@@ -52,27 +52,27 @@ export const ModalLinks: React.FC<ModalCallMeProps> = ({ onClose }) => {
 
   const handleCallMeClick = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // if (form.current) {
-    //   emailjs
-    //     .sendForm(
-    //       "service_i0ermid",
-    //       "template_3289x0b",
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_i0ermid",
+          "template_3289x0b",
 
-    //       form.current,
-    //       "0TgiLzRI1VTKEX6O7",
-    //       //@ts-ignore
-    //       { customValue1: "abc", customValue2: "abv" }
-    //     )
-    //     .then(
-    //       (result) => {
-    //         console.log(result.text);
-    //         console.log("message sent");
-    //       },
-    //       (error) => {
-    //         console.log(error.text);
-    //       }
-    //     );
-    // }
+          form.current,
+          "0TgiLzRI1VTKEX6O7",
+          //@ts-ignore
+          { customValue1: "abc", customValue2: "abv" }
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("message sent");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
     setFormFiled(true);
   };
   const handlePhoneNumberChange = (
@@ -116,11 +116,12 @@ export const ModalLinks: React.FC<ModalCallMeProps> = ({ onClose }) => {
         </button>
         {formFiled ? (
           <div className="flex flex-col text-[18px] h-[495px]">
-            <img
+            {/* <img
               src={checkmarkgreen}
               alt=""
               className="w-[80px] h-[80px] self-center mb-8"
-            />
+            /> */}
+            <div className="checkmark-test  "></div>
             <h3 className="mb-4">Thank you!</h3>
             <p className="mb-4">Your submission has been sent!</p>
           </div>

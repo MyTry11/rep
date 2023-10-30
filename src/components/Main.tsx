@@ -8,6 +8,7 @@ import { Logo } from "./Logo";
 import telegram from "../images/telegram.png";
 import whatsapp from "../images/whatsapp.png";
 import viber from "../images/viber.png";
+import logoRC from "../images/logoRC.png";
 
 export interface PhoneBlockProps {
   children?: React.ReactNode;
@@ -32,7 +33,7 @@ export function Main() {
           <div className="header_content pt-10">
             <div className="header_inner flex justify-between">
               <h2 className="mb-16 text-[25px] w-[150px] header-h2 text-z">
-                Reputation Coalition
+                <a href="/">Reputation Coalition</a>
               </h2>
               {window.innerWidth > 900 && (
                 <div className="flex ">
@@ -44,12 +45,12 @@ export function Main() {
                     </a>
                   </p>
 
-                  <PhoneBlock phone={phone}></PhoneBlock>
+                  {/* <PhoneBlock phone={phone}></PhoneBlock> */}
                 </div>
               )}
               {window.innerWidth < 900 && (
                 <div className="right-col-header flex">
-                  {window.innerWidth < 900 && (
+                  {/* {window.innerWidth < 900 && (
                     <div className="flex  text-[12px] mr-4">
                       <p className="block text-[12px] mb-1 mr-2 text-z">
                         Call us Mo-Su <br /> 9:00-21:00
@@ -75,7 +76,7 @@ export function Main() {
                         </a>
                       </div>
                     </div>
-                  )}
+                  )} */}
                   <div
                     className="nav_burger text-z"
                     onClick={() => setActive(true)}
@@ -94,8 +95,9 @@ export function Main() {
                       <HeaderContent>
                         <div className="flex justify-between w-[100%]">
                           <h2 className="mb-8 text-[25px] text-z">
-                            Reputation <br />
-                            Coalition
+                            <a href="/">
+                              Reputation <br /> Coalition
+                            </a>
                           </h2>
 
                           <div
@@ -103,7 +105,7 @@ export function Main() {
                             onClick={() => setActive(false)}
                           ></div>
                         </div>
-                        <PhoneBlock phone={phone}></PhoneBlock>
+                        {/* <PhoneBlock phone={phone}></PhoneBlock> */}
                       </HeaderContent>
                       <ul
                         onClick={closeBurger}
